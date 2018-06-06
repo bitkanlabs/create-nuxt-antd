@@ -1,0 +1,37 @@
+{
+  "name": "nuxt-antd",
+  "version": "1.0.0",
+  "description": "a nuxt project using ant-design",
+  "author": "yangqiqi",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "css-loader": "*",
+    "express": "^4.15.3",
+    "less": "2.7.2",
+    "less-loader": "^4.1.0",
+    "nuxt": "^1.0.0",
+    "prettier": "1.12.1",
+    "style-loader": "^0.21.0",
+    "vue-antd-ui": "^0.6.0",
+    "vue-loader": "^14.2.2",
+    "vue-template-compiler": "^2.0.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.0.1",
+    "eslint": "^4.15.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
+}
